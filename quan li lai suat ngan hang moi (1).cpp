@@ -2,7 +2,7 @@
 #include <string>
 #include <cmath>
 #include <iomanip>
-#include <stdio>
+#include <cstdio>
 #include <limits>
 using namespace std;
 
@@ -599,4 +599,5 @@ int main(){
     cout << "Tam biet!\n";
     return 0;
 }
+
 
