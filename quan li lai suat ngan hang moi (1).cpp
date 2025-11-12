@@ -2,7 +2,7 @@
 #include <string>
 #include <cmath>
 #include <iomanip>
-#include <cstdio>
+#include <stdio>
 #include <limits>
 using namespace std;
 
@@ -174,7 +174,7 @@ Customer* inputNewCustomerInteractive(){
     double dep, rate;
     int mon, age;
 
-    cin.ignore();   // xóa Enter thừa lần đầu
+    cin.ignore();   
     cout << "Ten: ";
     getline(cin, n);
     cout << "Gioi tinh: ";
@@ -186,7 +186,7 @@ Customer* inputNewCustomerInteractive(){
         cout << "Khong the tao khach hang duoi 16 tuoi.\n";
         return NULL;
     }
-    cin.ignore();  // xóa Enter sau khi nhập số
+    cin.ignore();  
     cout << "CCCD: ";
     getline(cin, cccd);
     cout << "So tai khoan: ";
@@ -197,7 +197,7 @@ Customer* inputNewCustomerInteractive(){
     cin >> rate;
     cout << "Ky han (thang): ";
     cin >> mon;
-    cin.ignore(); // chuẩn bị đọc ngày
+    cin.ignore(); 
     cout << "Ngay gui (dd/mm/yyyy): ";
     getline(cin, date);
 
@@ -270,7 +270,7 @@ Staff* inputNewStaffInteractive(){
     string n,g,cccd,pos;
     int age;
 
-    cin.ignore(); // dọn Enter
+    cin.ignore(); 
     cout << "Ten: ";
     getline(cin,n);
     cout << "Gioi tinh: ";
@@ -283,7 +283,7 @@ Staff* inputNewStaffInteractive(){
         return NULL;
     }
 
-    cin.ignore(); // dọn Enter
+    cin.ignore(); 
     cout << "CCCD: ";
     getline(cin,cccd);
     cout << "Vi tri lam viec: ";
@@ -472,9 +472,9 @@ int main(){
                         deleteStaffByName(staffs,x);
                         break;
                     }
-                    case 10: // Đăng xuất
+                    case 10: 
                         cout << "Dang xuat thanh cong!\n";
-                        break; // Thoát vòng while menu quản lý
+                        break; 
                     case 0:
                         return 0;
                     default:
@@ -599,3 +599,4 @@ int main(){
     cout << "Tam biet!\n";
     return 0;
 }
+
